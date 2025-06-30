@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Impresiones Lean</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Impresiones Lean</h1>
+  <div class="card">
+    <label for="tipo">Tipo de impresión</label>
+    <select id="tipo" onchange="calcularPrecio()">
+      <option value="" disabled selected>Seleccioná el tipo de impresión</option>
+      <option value="color">A color</option>
+      <option value="byn">Blanco y negro</option>
+    </select>
+
+    <label for="cantidad">Cantidad de hojas</label>
+    <input type="number" id="cantidad" min="1" placeholder="Ej: 10" oninput="calcularPrecio()" />
+
+    <label>
+      <input type="checkbox" id="anillado" onchange="calcularPrecio()" />
+      Quiero anillado
+    </label>
+
+    <div id="precio" class="precio">El precio total es: $0</div>
+
+    <button onclick="enviarWhatsApp()">Enviar por WhatsApp</button>
+  </div>
+  <p id="aviso" class="aviso">Este precio es aproximado. Si compra por cantidad, es posible que se le haga un descuento.</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
