@@ -11,14 +11,14 @@
   <div class="card">
     <label for="tipo">Tipo de impresión</label>
     <select id="tipo" onchange="calcularPrecio()">
-          <option value="" disabled selected>Seleccioná el tipo de impresión</option>
-
+      <option value="" disabled selected>Seleccioná el tipo de impresión</option>
       <option value="color">A color</option>
       <option value="byn">Blanco y negro</option>
     </select>
 
     <label for="cantidad">Cantidad de hojas</label>
     <input type="number" id="cantidad" min="1" placeholder="Ej: 10" oninput="calcularPrecio()" />
+
     <label for="pdfInput">Cargar PDF</label>
     <input type="file" id="pdfInput" accept="application/pdf" onchange="leerPDF(); permitirEdicion()" />
 
@@ -26,6 +26,14 @@
       <input type="checkbox" id="anillado" onchange="calcularPrecio()" />
       Quiero anillado
     </label>
+
+    <div class="checkbox-libro">
+      <input type="checkbox" id="sinCantidad" onchange="toggleLibroSinCantidad()" />
+      <label for="sinCantidad">No sé la cantidad, quiero pedir un libro por el titulo (ByN)</label>
+    </div>
+
+    <input type="text" id="tituloLibro" placeholder="Ingresá el título del libro" />
+    <ul id="sugerenciasLibros" class="sugerencias"></ul>
 
     <div id="precio" class="precio">El precio total es: $0</div>
 
