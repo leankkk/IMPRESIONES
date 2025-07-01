@@ -111,3 +111,106 @@ input[type="file"]::-webkit-file-upload-button {
 input[type="file"]::-webkit-file-upload-button:hover {
   background-color: #219150;
 }
+/* Estilo del checkbox con fondo integrado */
+.checkbox-libro {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ecf0f1;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  gap: 10px;
+  font-weight: bold;
+  color: #34495e;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkbox-libro:hover {
+  background-color: #dfe6e9;
+}
+
+.checkbox-libro input[type="checkbox"] {
+  transform: scale(1.2);
+  accent-color: #27ae60;
+  cursor: pointer;
+}
+
+/* Input de título del libro personalizado */
+#tituloLibro {
+  display: none;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f0f4f8;
+  transition: border-color 0.3s ease;
+}
+
+#tituloLibro:focus {
+  border-color: #27ae60;
+  box-shadow: 0 0 10px rgba(39, 174, 96, 0.3);
+}
+/* Estilo para las sugerencias desplegables del libro */
+.sugerencias {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.item-sugerencia {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+}
+
+.item-sugerencia:last-child {
+  border-bottom: none;
+}
+
+.item-sugerencia:hover {
+  background-color: #ecf0f1;
+}
+#sugerenciasLibros {
+  margin-top: 0;
+  box-shadow: none;
+  border-top: none;
+}
+
+.item-sugerencia {
+  box-shadow: none;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.item-sugerencia:last-child {
+  border-bottom: none;
+}
+#sugerenciasLibros {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none !important;
+  border-top: none !important;
+}
+
+.item-sugerencia {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: #ecf0f1;
+  margin: 0;
+}
+
+.item-sugerencia:hover {
+  background-color: #dfe6e9;
+}
