@@ -1,9 +1,20 @@
 const librosConocidos = [
-  { titulo: "Toldot(ByN)", precio: 2000 },
-    { titulo: "Toldot(Color)", precio: 4500 },
-  { titulo: "Matemática 2", precio: 1800 },
-  { titulo: "Biología Celular", precio: 2300 },
-  { titulo: "Geografía Mundial", precio: 1900 }
+  { titulo: "Toldot 1(ByN)", precio: 8000 },
+  { titulo: "Toldot 1 (Color)", precio:15500 },
+  { titulo: "Toldot 2(Byn)", precio: 7300 },
+  { titulo: "Toldot 2(Color)", precio: 13900 },
+  { titulo: "Toldot 3(Byn)", precio: 9000 },
+  { titulo: "Toldot 3(Color)", precio: 17000},
+  { titulo: "Toldot 4(ByN)", precio: 15030 },
+  { titulo: "Toldot 4(Color)", precio: 30000 },
+  { titulo: "Toldot 4(Color)", precio: 30000 },
+  { titulo: "Dr Jekyll y MR Hyde", precio: 5000 },
+  { titulo: "Apunte biologia 1°(ByN)", precio: 9200 },
+  { titulo: "Apunte biologia 1°(color)", precio: 17000 },
+  { titulo: "Apunte biologia 2° 1ra parte(ByN)", precio: 4500 },
+  { titulo: "Apunte biologia 2° 1ra parte(color)", precio: 6800 },
+  { titulo: "Apunte biologia 2° 2ra parte(ByN)", precio: 7200 },
+  { titulo: "Apunte biologia 2° 2ra parte(color)", precio: 13500 },
 ];
 
 function leerPDF() {
